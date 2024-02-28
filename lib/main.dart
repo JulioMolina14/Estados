@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:mprovider/page/pagina1_page.dart';
 import 'package:mprovider/page/parigna2_page.dart';
 
@@ -9,14 +10,18 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return GetMaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Material App',
       initialRoute: 'pagina1',
-      routes: {
+      /* routes: {
         'pagina1': (context) => Pagina1(),
-        'pagina2': (context) => Pagina2()
-      },
+        'pagina2': (context) => Pagina2(),
+      }, */
+      getPages: [
+        GetPage(name: '/pagina1', page: () => Pagina1()),
+        GetPage(name: '/pagina2', page: () => Pagina2())
+      ],
     );
   }
 }
