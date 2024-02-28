@@ -50,9 +50,6 @@ class Informacion_Usuario extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      width: double.infinity,
-      height: double.infinity,
-      padding: const EdgeInsets.all(20.0),
       child: Column(
         children: [
           const Align(
