@@ -26,7 +26,7 @@ class Pagina1 extends StatelessWidget {
         backgroundColor: Colors.amberAccent,
         child: Icon(Icons.navigate_next),
         onPressed: () => Get.toNamed('pagina2',
-            arguments: {'nombre': 'Aleja', 'edad': '21'}),
+            arguments: {'nombre': 'Aleja', 'edad': '22'}),
       ),
     );
   }
