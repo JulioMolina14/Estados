@@ -37,7 +37,7 @@ class No_Usuario extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       child: Center(
-        child: Text('NO EXISTE USUARIO'),
+        child: Text('NO EXISTE USER'),
       ),
     );
   }
